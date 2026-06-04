@@ -67,9 +67,10 @@ const Home: Component<
     }
 
     .btn-wrap {
-        background: linear-gradient(45deg, var(--accent0), var(--accent1));
-        width: max-content;
-        border-radius: 99px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
 
     .more-btn,
@@ -83,7 +84,9 @@ const Home: Component<
         text-decoration: none;
         transition: background 0.3s, color 0.3s;
         cursor: pointer;
-        margin: 2px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        box-shadow: 0 0 0 2px var(--accent0);
     }
 
     .more-btn:hover {
@@ -160,9 +163,10 @@ const Home: Component<
           <h1>QuickSign</h1>
           <p>a local development certificate signer for iOS devices.</p>
           <div class="btn-wrap">
-          <a href="https://x.com/QuickSigniOS" class="more-btn" download>
-            eta son™
-          </a>
+            <a href="/lqs" class="more-btn">libqsign</a>
+            <a href="https://x.com/QuickSigniOS" class="more-btn" download>
+              eta son™
+            </a>
           </div>
         </div>
       </section>
