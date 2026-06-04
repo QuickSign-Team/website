@@ -228,7 +228,11 @@ const Lqs: Component<
     }
 
     button.more-btn {
+        appearance: none;
+        -webkit-appearance: none;
+        background: linear-gradient(45deg, var(--surface1), var(--surface1));
         color: var(--accent0);
+        border: 2px solid transparent;
     }
 
     button:disabled {
