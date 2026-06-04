@@ -1,5 +1,5 @@
 {
-  "name": "create-dreamland-app",
+  "name": "quicksign website",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dreamlandjs/dreamland-router": "github:MercuryWorkshop/dreamland-router",
     "dreamland": "^0.0.24",
-    "dreamland-router": "https://github.com/mercuryworkshop/dreamland-router",
     "rollup-plugin-typescript2": "^0.36.0",
     "vite-plugin-dreamland": "^1.2.0"
   },
   "devDependencies": {
     "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "vite": "^8.0.16"
   }
 }
